@@ -1,8 +1,20 @@
-#taxas
+#input do nome do usuário
 
 nome = input("Insira seu nome: ")
-tipo = int(input("Insira seu tipo de diabetes: "))
-glicose = float(input("Insira sua glicemia: "))
+
+#verificação e validação do tipo de diabetes
+
+while True:
+    tipo = int(input(" \nInsira seu tipo de diabetes: \n \n[1]diabetes tipo 1\n[2]diabetes tipo 2\n[3]diabetes gestacional\n[4]pré diabetes\n[5]proficional de saúde\n \n"))
+    if tipo > 0 and tipo < 5:
+        break
+    print('\nresposta inválida, tente novamente') 
+
+#input da glicemia
+
+glicose = float(input(" \nInsira sua glicemia: "))
+
+#verificação do nível glicêmico
 
 if glicose <= 70:{
     print("Hipoglicemia")
@@ -27,7 +39,22 @@ razao_carbo = 15
 
 unidades_insulina = (((glicose - glicemia_alvo) / fator_correcao) + (qtd_carbo / razao_carbo))
 
-print(f"A quantidade de insulina a ser tomada é: {unidades_insulina:.2f}")
+#arredondamento da quantidade de insulina
+
+import math
+insulina_inteiro = math.trunc(unidades_insulina)
+if (unidades_insulina - insulina_inteiro) == 0:
+    insulina_print = unidades_insulina
+
+if (unidades_insulina - insulina_inteiro) > 0 and (unidades_insulina - insulina_inteiro) < 0.5:
+    insulina_print = math.floor(unidades_insulina)
+
+if (unidades_insulina - insulina_inteiro) > 0.5:
+    insulina_print = math.ceil(unidades_insulina)
+
+#retorno unidades de insulina formatada
+
+print(f"A quantidade de insulina a ser tomada é: {insulina_print}")
 
 #diario
 
