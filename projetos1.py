@@ -62,3 +62,5 @@ diario = str(input("escreva aqui seu acompanhamento diario: "))
 print(diario)
 
 
+
+
