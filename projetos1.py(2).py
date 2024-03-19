@@ -6,7 +6,7 @@ nome = input("Insira seu nome: ")
 
 while True:
     tipo = int(input(" \nInsira seu tipo de diabetes: \n \n[1]diabetes tipo 1\n[2]diabetes tipo 2\n[3]diabetes gestacional\n[4]pré diabetes\n[5]proficional de saúde\n \n"))
-    if tipo > 0 and tipo < 5:
+    if tipo > 0 and tipo < 6:
         break
     print('\nresposta inválida, tente novamente') 
 
