@@ -34,4 +34,6 @@ print(f"A quantidade de insulina a ser tomada é: {unidades_insulina:.2f}")
 diario = str(input("escreva aqui seu acompanhamento diario: "))
 print(diario)
 
+lalalalalala
+
 
