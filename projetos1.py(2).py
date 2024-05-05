@@ -88,7 +88,7 @@ def formatacao_unidades_de_isulina(unidades_insulina): # formata o valor retorna
 
     return insulina_print
 
-def monitoramento_consulta(): # calcula o intervalo entre a última consulta e a "data atual", retornando um veedback via print
+def monitoramento_consulta(): # calcula o intervalo entre a última consulta e a "data atual", retornando um feedback via print
 
     data_ultima_consulta = str(input('\ndigite a data da sua última consulta médica (ex: 01/01/2001): ')).strip()
 
