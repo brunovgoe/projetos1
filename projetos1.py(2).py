@@ -267,6 +267,6 @@ def main(): # função principal de execução
 
             break
 
-    print('\nobrigado por utilisar a nossa aplicação, volte quando quiser :)\n') # mensagenzinha de encerramento
+    print('\nobrigado por utilizar a nossa aplicação, volte quando quiser :)\n') # mensagenzinha de encerramento
 
 main()
